@@ -1,0 +1,39 @@
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-2 > *  {
+  width: 0;
+  flex: 1 1 100%;
+}
+
+.flex-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-4 > * {
+  width: 0;
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .flex-2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex-2 > *  {
+    width: 48%;
+    flex: 1 1 100%;
+  }
+  .flex-4 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex-4 > * {
+    width: 22%;
+    flex: 1 1 100%;
+  }
+}
+

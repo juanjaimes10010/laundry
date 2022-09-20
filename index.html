@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h1>Welcome to Laundromat</h1>
+          <p>come wash 24/7</p>
+          <a href="/" id="btn">Find Us</a>
+        </div>
+      </section>
+      <section id="spinners">
+        <h3 class="spin">Come wash & dry -Laundromat-</h3>
+        <h3 class="spin">Come wash & dry -Laundromat-</h3>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div id="about-content">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit suscipit alias debitis qui inventore beatae, sequi
+              ducimus autem consequuntur, libero pariatur fuga voluptate modi
+            </p>
+            <p>
+              mollitia fugiat ut dolor explicabo asperiores. Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Totam quidem maxime
+              voluptas minima fugit nemo officia error qui minus ad veritatis
+              assumenda, omnis, rerum unde quam. Corrupti suscipit natus velit.
+            </p>
+          </div>
+          <img
+            src="https://laundry-juan.netlify.app/images/laundry1.jpg"
+            id="about-img"
+          />
+        </div>
+      </section>
+      <section id="banner">
+        <p>24<br />Washer</p>
+        <p>24<br />Dryers</p>
+        <p>24<br />Vending Machines</p>
+        <p>24<br />TV's</p>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="service-card">
+            <img
+              src=" https://cdn-icons-png.flaticon.com/512/1010/1010385.png"
+            />
+            <p>
+              we have free washing Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Eveniet minima exercitationem optio dolorum
+              dignissimos unde mollitia molestias nobis, perferendis ab, dolorem
+              maxime est quae culpa soluta tempora, reprehenderit fuga rem!
+            </p>
+          </div>
+          <div class="service-card">
+            <img
+              src=" https://cdn-icons-png.flaticon.com/512/1010/1010385.png"
+            />
+            <p>
+              we have free washing Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Eveniet minima exercitationem optio dolorum
+              dignissimos unde mollitia molestias nobis, perferendis ab, dolorem
+              maxime est quae culpa soluta tempora, reprehenderit fuga rem!
+            </p>
+          </div>
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2946/2946695.png"
+            />
+            <p>
+              we have free washing Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Eveniet minima exercitationem optio dolorum
+              dignissimos unde mollitia molestias nobis, perferendis ab, dolorem
+              maxime est quae culpa soluta tempora, reprehenderit fuga rem!
+            </p>
+          </div>
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2729/2729701.png"
+            />
+            <p>
+              we have free washing Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Eveniet minima exercitationem optio dolorum
+              dignissimos unde mollitia molestias nobis, perferendis ab, dolorem
+              maxime est quae culpa soluta tempora, reprehenderit fuga rem!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="container">
+          <h2>Our Gallery</h2>
+          <div id="gallery-content" class="flex-4">
+            <img src="https://laundry-juan.netlify.app/images/laundry1.jpg" />
+            <img src="https://laundry-juan.netlify.app/images/laundry1.jpg" />
+            <img src="https://laundry-juan.netlify.app/images/laundry1.jpg" />
+            <img src="https://laundry-juan.netlify.app/images/laundry1.jpg" />
+            <img src="https://laundry-juan.netlify.app/images/laundry1.jpg" />
+            <img src="https://laundry-juan.netlify.app/images/laundry1.jpg" />
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2>Location</h2>
+          <iframe
+            src="https://maps.google.com/maps?q=dennis%20b%26k&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+          ></iframe>
+          <div>
+            <div>
+              <h2>Find Us</h2>
+              <p>Address Somewhere in, Chicago, Ill 60623</p>
+            </div>
+            <form action="">
+              <h2>Comments or reviews</h2>
+              <input type="text" placeholder="name" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="bubbles"></div>
+    <script src="./CircleType-master/CircleType-master/dist/circletype.min.js"></script>
+    <script>
+      let spin = document.querySelectorAll(".spin");
+      spin.forEach((s) => new CircleType(s));
+      new CircleType(document.querySelector("#hero h1")).radius(300);
+      new CircleType(document.querySelector("#hero p")).radius(100);
+    </script>
+  </body>
+</html>
